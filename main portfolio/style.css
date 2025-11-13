@@ -1,0 +1,226 @@
+
+/* 
+styling for the main body sha */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-color: #0d1117;
+  color: #cfd8dc;
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; }
+ul { padding-left: 20px; }
+/* 
+so the header go stay one place when we are moving (sticky header type 
+shi) */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1f2a38;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #00b0ff;
+  transition: color 0.3s;
+}
+header p { color: #a0aec0; margin: 5px 0 15px; }
+header nav a {
+  color: #cfd8dc;
+  margin: 0 15px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header nav a:hover,
+header nav a.active {
+  background-color: #005f99;
+  color: #ffffff;
+}
+/* stles for the project i  wan to do likea light kinito contrast the dark blue */
+.projectcard {
+  background-color: #f2f9ff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 15px 0;
+  transition: transform 0.2s ease;
+}
+
+.projectcard:hover {
+  transform: translateY(-5px);
+}
+
+.projectcard h3 {
+  margin-top: 0;
+  color: #21618c;
+}
+
+.projectcard p {
+  margin: 10px 0;
+  color: #0d1b2a;
+}
+
+.project-link, .page-link, button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #5dade2;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.1s;
+  border: none;
+  cursor: pointer;
+}
+
+.project-link:hover, .page-link:hover, button:hover {
+  background-color: #2e86de;
+  transform: translateY(-2px);
+}
+
+/* section css stlying just dey randomize shi  */
+main { max-width: 1000px; margin: auto; padding: 40px 20px; }
+section { margin-bottom: 60px; padding: 20px; border-radius: 12px; }
+
+
+.dark-section { background-color: #1b263b; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+.blue-section { background-color: #0b3d91; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+
+
+section h2 { color: #00b0ff; font-size: 28px; margin-bottom: 20px; }
+
+
+
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+}
+.contact-info li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.contact-info i { margin-right: 10px; color: #00b0ff; }
+.contact-info a { color: #cfd8dc; font-weight: 600; }
+.contact-info a:hover { color: #00b0ff; }
+
+
+footer {
+  background-color: #0a1f33;
+  color: #cfd8dc;
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+@media (max-width: 600px) {
+  header h1 { font-size: 24px; }
+  section h2 { font-size: 22px; }
+  .projectcard { padding: 20px 15px; }
+  .contact-info li { font-size: 16px; }
+}
+/* styling for the skill bars and for contact sef */
+.skillcard {
+  background-color: #f2f9ff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  transition: transform 0.2s ease;
+}
+
+.skillcard:hover {
+  transform: translateY(-4px);
+}
+
+.skillcard h4 {
+  margin: 0 0 10px 0;
+  color: #21618c;
+}
+
+.skillcard p {
+  margin: 0 0 12px 0;
+  color: #0d1b2a;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #d6eaf8;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #5dade2;
+  width: 0%;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #0d1b2a;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #5dade2;
+}
+
+.contact-info a {
+  color: #21618c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  color: #2e86de;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #5dade2;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.contact-form button:hover {
+  background-color: #2e86de;
+  transform: translateY(-2px);
+}
